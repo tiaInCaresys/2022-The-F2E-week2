@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2 - 今晚，我想來點點簽</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-7">
+                <img src="img/logo.png" class="logo">
+            </div>
+            <div class="col-5">
+                <ul class="bar">
+                    <li>
+                        <a href="file.html" class="barA"><i class="fa-regular fa-file-lines"></i>文件</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="barSign"><i class="fa-solid fa-signature"></i>簽名</a>
+                    </li>
+                    <li>
+                        <a href="#" class="barA"><i class="fa-solid fa-gear"></i>設定</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/img/cat.png" class="cat"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-5">
+                <div class="left">
+                    <P class="title">Go Green</P>
+                    <p class="title">Today.</p>
+                    <p>創建您的第一枚電子簽名</p>
+                </div>
+            </div>
+            <div class="col-7 right">
+
+                <div class="col-10 content">
+
+                    <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-list-tab" data-bs-toggle="tab" data-bs-target="#nav-list" type="button" role="tab" aria-controls="nav-list" aria-selected="true">手寫模式</button>
+                        <button class="nav-link" id="nav-chart-tab" data-bs-toggle="tab" data-bs-target="#nav-chart" type="button" role="tab" aria-controls="nav-chart" aria-selected="false">上傳圖片</button>
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                
+                      <div class="tab-pane fade show active" id="nav-list" role="tabpanel" aria-labelledby="nav-list-tab">
+                        <canvas id="canvas" width="500" height="300" style="background: #EEF7F9;
+                        border-radius: 30px;"></canvas>  
+                        <br>
+                        簽名檔名稱
+                        <br>   
+                        <input type="text" class="show-img">
+                        <hr>          
+                      </div>
+                
+                      <div class="tab-pane fade" id="nav-chart" role="tabpanel" aria-labelledby="nav-chart-tab">
+                        
+                          <div id="draggable" class="col-12">拖曳圖片至此，或<a href="#">選擇檔案</a>
+                            <br>支援檔案類型: PNG,JPEG ≦ 5mb
+                          </div>
+                        
+                      </div>
+                
+                    </div>
+
+                </div>
+                <div class="col-10 button">
+                    <a href="#" class="btn btn-light col-5 clear">清除畫布</a>
+                    <a href="#" class="btn btn-primary col-5 save">儲存結果</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer">
+            <div class="col-6">
+                <p>© 2009-2022 Kdan Mobile Software Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/canvas.js"></script>
+</body>
+</html>
